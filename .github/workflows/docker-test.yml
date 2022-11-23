@@ -24,4 +24,4 @@ jobs:
       run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/cxtest
 
     - name: Docker Push
-      run: docker push ${{ secrets.DOCKER_USERNAME }}/cxtest:1
+      run: docker push ${{ secrets.DOCKER_USERNAME }}/cxtest
